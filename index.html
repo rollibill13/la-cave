@@ -151,7 +151,7 @@ footer{margin-top:44px;font-size:11px;color:var(--grigio);border-top:1px solid v
 <header>
   <div class="eyebrow">Diario di cantina · Rolando</div>
   <h1>La Cave — <em>Borgogna &amp; oltre</em></h1>
-  <div class="meta">Aggiornato al <b>3 luglio 2026</b> · curato con Claude · le date con ~ sono approssimative, correggimi e le sistemo</div>
+  <div class="meta">Aggiornato al <b>4 luglio 2026</b> · curato con Claude · le date con ~ sono approssimative, correggimi e le sistemo</div>
 </header>
 
 <nav role="tablist">
@@ -267,6 +267,7 @@ const bottiglie = [
 ];
 
 const degustazioni = [
+ {area:"Borgogna — Bianco", v:"Chablis 1er Cru «Vaillons» 2020 · Nicolas Potel (al calice)", d:"4 lug 2026", eti:{p:"Nicolas Potel",n:"Chablis 1er Cru Vaillons",a:2020,c:"Bianco"}, nota:"(in degustazione — note in arrivo)", claude:"Primo Chablis 1er Cru e primo bianco con età (6 anni): due lenti nuove insieme — il gradino di cru sopra il village Billaud, e l'evoluzione (miele, cera, nocciola sopra il minerale). Vaillons = riva sinistra, lo stile fine e floreale. Potel è un négociant di Beaune (marchio storico, oggi del gruppo Labouré-Roi)."},
  {area:"Borgogna — Bianco", v:"Bourgogne Aligoté «La Charme aux Prêtres» 2023 · Sylvain Pataille", d:"3 lug 2026", img:"aligote", nota:"Raspo e frutto, come è mano di Pataille. Non sento il legno. Molto minerale, leggermente più aromatico dello Chardonnay, più struttura di quelli assaggiati finora.", claude:"Primo Aligoté — e ha sfidato lo stereotipo del vitigno 'magro': la struttura viene dalle viti del 1949 (estratto), dal lungo affinamento sulle fecce e dalla presa fenolica del grappolo intero (il 'raspo'), non dall'alcol (12%). Legno solo vecchio/neutro = invisibile. Struttura senza peso: la firma dei grandi Aligoté."},
  {area:"Borgogna — Bianco", v:"Vézelay «Le Clos du Vézelay» · (produttore da confermare)", d:"~giu 2026", img:"vezelay", nota:"Il riferimento di freschezza estrema: più fresco e teso anche del Morey Côte d'Or.", claude:"Vézelay, estremo nord vicino a Chablis: Chardonnay nervoso e verticale. Dimmi produttore e annata dall'etichetta (la foto è la tua) e completo la scheda."},
  {area:"Borgogna — Bianco", v:"Chablis «Les Grands Terroirs» 2023 · Samuel Billaud", d:"2 lug 2026", img:"billaud", nota:"Molto minerale, però tonda; zero legno.", claude:"Acciaio puro (stile Billaud entry), Kimmeridgiano che dà il sale, rotondità dall'annata calda 2023 e dalla cuvée materica. Chablis 'nudo': il contraltare esatto del Morey vestito di legno."},
@@ -284,7 +285,7 @@ const degustazioni = [
 const borgogna = [
  {zona:"Chablis & Auxerrois", geo:"Estremo nord · tensione e sale", sez:[
    {col:"Bianco", vill:[
-     {n:"Chablis", note:"Il tuo riferimento 'teso' — Billaud", lv:[["Village","ok","Billaud «Grands Terroirs» 2023 — bevuto (2 lug 2026)"],["1er Cru","gap","Montée de Tonnerre · Vaillons · Montmains — prossimo gradino"],["Grand Cru","gap","Les Clos, Vaudésir…"]]},
+     {n:"Chablis", note:"Il tuo riferimento 'teso' — Billaud", lv:[["Village","ok","Billaud «Grands Terroirs» 2023 — bevuto (2 lug 2026)"],["1er Cru","ok","assaggiato al calice: Potel «Vaillons» 2020 (4 lug 2026)"],["Grand Cru","gap","Les Clos, Vaudésir…"]]},
      {n:"Vézelay", note:"Bevuto — «Le Clos du Vézelay» (foto in diario)", lv:[["Village","ok","bevuto: il tuo riferimento di freschezza estrema"],["1er Cru","na"],["Grand Cru","na"]]},
      {n:"Saint-Bris", note:"Curiosità: l'unico Sauvignon di Borgogna", lv:[["Village","gap"],["1er Cru","na"],["Grand Cru","na"]]}]},
    {col:"Rosso", vill:[
