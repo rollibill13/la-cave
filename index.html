@@ -151,7 +151,7 @@ footer{margin-top:44px;font-size:11px;color:var(--grigio);border-top:1px solid v
 <header>
   <div class="eyebrow">Diario di cantina · Rolando</div>
   <h1>La Cave — <em>Borgogna &amp; oltre</em></h1>
-  <div class="meta">Aggiornato al <b>10 luglio 2026</b> · curato con Claude · le date con ~ sono approssimative, correggimi e le sistemo</div>
+  <div class="meta">Aggiornato al <b>14 luglio 2026</b> · curato con Claude · le date con ~ sono approssimative, correggimi e le sistemo</div>
 </header>
 
 <nav role="tablist">
@@ -240,7 +240,6 @@ const SCALA = [2024, 2042];
 
 const bottiglie = [
  {g:"Borgogna — Rosso", n:"Nuits-Saint-Georges 1er Cru «Clos des Porrets St-Georges»", p:"Henri Gouges", a:2019, c:"Rosso", r:"Borgogna", z:"Côte de Nuits", w:[2027,2036], note:"Il keeper. Monopole, 1er Cru serio: decantare bene quando sarà l'ora.", st:"cantina"},
- {g:"Borgogna — Rosso", n:"Fixin Village", p:"Dom. Armelle & J.-M. Molin", a:2022, c:"Rosso", r:"Borgogna", z:"Côte de Nuits", w:[2026,2031], note:"Artigiano bio di Fixin, raro. Pronto con ~1h di decanter; meglio dal 2027.", st:"cantina"},
  {g:"Borgogna — Rosso", n:"Marsannay «Le Chapitre»", p:"Sylvain Pataille", a:2023, c:"Rosso", r:"Borgogna", z:"Côte de Nuits", w:[2027,2035], note:"Il lieu-dit più profondo di Pataille. Dagli un anno o due.", st:"cantina"},
  {g:"Borgogna — Rosso", n:"Marsannay «Clos du Roy»", p:"Sylvain Pataille", a:2023, c:"Rosso", r:"Borgogna", z:"Côte de Nuits", w:[2026,2033], note:"Seta e tensione. Confronto da fare con Le Chapitre: stessa mano, due parcelle.", st:"cantina"},
  {g:"Borgogna — Rosso", n:"Pommard «Les Noizons»", p:"Domaine Cauvard", a:2023, c:"Rosso", r:"Borgogna", z:"Côte de Beaune", w:[2026,2032], note:"Il volto potente della Côte de Beaune (vs il Volnay setoso). Decanter ~1h.", st:"cantina"},
@@ -268,6 +267,7 @@ const bottiglie = [
 ];
 
 const degustazioni = [
+ {area:"Borgogna — Rosso", v:"Fixin Village 2022 · Domaine Armelle & Jean-Michel Molin", d:"14 lug 2026", eti:{p:"A. & J.-M. Molin",n:"Fixin Village",a:2022,c:"Rosso"}, nota:"Setoso e vellutato, avvolgente; frutti di bosco e retrogusto di pelle a stemperare. Più alcol e meno fresco, ma dosato bene.", claude:"Primo village di Côte de Nuits da bottiglia intera — e il gradino si è sentito in due modi: la TRAMA (setoso/avvolgente vs la rotondità semplice del regionale) e il DOPPIO REGISTRO (frutto + pelle). La 'pelle' è la prima nota savoury/animale del percorso: la firma scura della Côte de Nuits, che i regionali non avevano. Più alcol = 2022 caldo; 'dosato bene' = la mano bio di Molin che tiene l'equilibrio."},
  {area:"Fuori Borgogna — Pinot Nero", v:"Toscana Pinot Nero «Fortuni» 2017 · Podere Fortuna (Mugello)", d:"~10 lug 2026", eti:{p:"Podere Fortuna",n:"Pinot Nero Fortuni",a:2017,c:"Rosso"}, nota:"Struttura e corpo molto più preponderanti della Borgogna; più forte e alcolico, meno fresco e meno 'fine'.", claude:"La lezione del Pinot fuori Borgogna, sentita al primo assaggio: latitudine più calda (anche il Mugello 'fresco' è più caldo della Côte d'Or) + annata 2017 torrida = più materia e alcol, meno nervo e finezza. Il vitigno è lo stesso; il luogo no. Ora sai cosa paghi davvero in Borgogna: la finezza è la merce rara."},
  {area:"Beaujolais — Gamay", v:"Morgon «Côte du Py» 2023 · Jean Foillard", d:"5 lug 2026", img:"morgon", nota:"Un'esplosione di frutti rossi e ciliegia, anche fragolina di bosco; tannino morbido, corpo rotondo, piacione. Mantiene il nervo e la freschezza del Pinot Nero, ma più pieno.", claude:"Primo Gamay del percorso, dal lieu-dit simbolo di Morgon. Foillard = icona del naturale (macerazione semi-carbonica alla Chauvet, grappolo intero, zolfo minimo). E primo suolo NON calcareo: Côte du Py è granito e scisti blu — senti se la mineralità è diversa (più ferrosa/scura che salina). Fresco a 14–16°C. L'esplosione di frutto è la firma della semi-carbonica (fermentazione intracellulare nel grappolo intero = frutto brillante, quasi candito) più il 2023 caldo (rotondità); il tannino morbido è il Gamay poco estratto. 'Piacione' in superficie — ma sotto il frutto il Py tiene una spina granitica: cercala mentre si apre."},
  {area:"Borgogna — Bianco", v:"Chablis 1er Cru «Vaillons» 2020 · Nicolas Potel (al calice)", d:"4 lug 2026", img:"potel", nota:"Un po' di cera d'api; legno poco, solo per dare rotondità; verticale e minerale, secco, non aromatico. Aprendosi nel bicchiere: note di vaniglia e rum.", claude:"Prima lettura dell'ETÀ su un bianco: la cera d'api è il marcatore d'evoluzione dei 6 anni — riconosciuto al primo colpo. Sotto, il vino è rimasto verticale e minerale: il DNA Chablis regge il tempo (è la sua dote). 'Secco non aromatico' = la neutralità dello Chardonnay maturo, all'opposto dell'Aligoté aromatico di ieri. Négociant con sede a Nuits-Saint-Georges (dall'etichetta), legno dosato per texture. Sesta lente acquisita: il tempo. Col calore e l'aria sono emerse vaniglia (lattoni del rovere) e rum (nota ossidativo-caramellata di botte + età): il legno c'era, ma nascosto dal freddo — settima osservazione: il vino si muove nel bicchiere."},
@@ -297,7 +297,7 @@ const borgogna = [
  {zona:"Côte de Nuits", geo:"Il regno del Pinot Noir strutturato", sez:[
    {col:"Rosso", vill:[
      {n:"Marsannay", note:"Il villaggio che stai approfondendo con Pataille", lv:[["Village","ok","Pataille village (bevuto) + Le Chapitre & Clos du Roy (in arrivo)"],["1er Cru","na","nessun 1er Cru ufficiale (classificazione in corso — i lieux-dits di Pataille sono i candidati)"],["Grand Cru","na"]]},
-     {n:"Fixin", note:"", lv:[["Village","ok","Molin 2022 in cantina"],["1er Cru","gap","Clos de la Perrière, Clos du Chapitre"],["Grand Cru","na"]]},
+     {n:"Fixin", note:"", lv:[["Village","ok","Molin 2022 — bevuto (14 lug 2026)"],["1er Cru","gap","Clos de la Perrière, Clos du Chapitre"],["Grand Cru","na"]]},
      {n:"Gevrey-Chambertin", note:"PRIORITÀ — la potenza (Sérafin ~75€ resta il candidato)", lv:[["Village","gap"],["1er Cru","gap","Clos St-Jacques, Cazetiers"],["Grand Cru","gap","Chambertin + altri 8"]]},
      {n:"Morey-Saint-Denis", note:"", lv:[["Village","gap"],["1er Cru","gap"],["Grand Cru","gap","Clos de Tart, Clos de la Roche, Clos des Lambrays"]]},
      {n:"Chambolle-Musigny", note:"L'eleganza — toccata solo di striscio", lv:[["Village","mid","solo il regionale Modot-Guyon (domaine di Chambolle): manca il village vero"],["1er Cru","gap","Les Amoureuses, Les Charmes"],["Grand Cru","gap","Musigny, Bonnes-Mares"]]},
