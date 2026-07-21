@@ -151,7 +151,7 @@ footer{margin-top:44px;font-size:11px;color:var(--grigio);border-top:1px solid v
 <header>
   <div class="eyebrow">Diario di cantina · Rolando</div>
   <h1>La Cave — <em>Borgogna &amp; oltre</em></h1>
-  <div class="meta">Aggiornato al <b>18 luglio 2026</b> · curato con Claude · le date con ~ sono approssimative, correggimi e le sistemo</div>
+  <div class="meta">Aggiornato al <b>21 luglio 2026</b> · curato con Claude · le date con ~ sono approssimative, correggimi e le sistemo</div>
 </header>
 
 <nav role="tablist">
@@ -253,10 +253,10 @@ const bottiglie = [
  {g:"Borgogna — Rosso", n:"Marsannay «Le Chapitre»", p:"Sylvain Pataille", a:2023, c:"Rosso", r:"Borgogna", z:"Côte de Nuits", w:[2027,2035], note:"Il lieu-dit più profondo di Pataille. Dagli un anno o due.", st:"cantina"},
  {g:"Borgogna — Rosso", n:"Marsannay «Clos du Roy»", p:"Sylvain Pataille", a:2023, c:"Rosso", r:"Borgogna", z:"Côte de Nuits", w:[2026,2033], note:"Seta e tensione. Confronto da fare con Le Chapitre: stessa mano, due parcelle.", st:"cantina"},
 
- {g:"Borgogna — Bianco", n:"Meursault «Les Chevalières»", p:"Domaine Y. Clerget", a:2018, c:"Bianco", r:"Borgogna", z:"Côte de Beaune", w:[2024,2030], note:"IL Meursault: village maturo (8 anni) dal domaine di Thibaud Clerget (fondato 1268). Strutturato e complesso, 20% legno nuovo. Finestra aperta: si può bere già.", st:"in arrivo"},
- {g:"Borgogna — Bianco", n:"Chablis «Lacryma Vinea»", p:"Thomas Tixier", a:2024, c:"Bianco", r:"Borgogna", z:"Chablis", w:[2026,2031], note:"La cuvée alta del giovane grower naturale di Courgis (nelle carte accanto a De Moor e Béru). Giovanissimo: dagli aria all'apertura.", st:"in arrivo"},
- {g:"Borgogna — Bianco", n:"Pernand-Vergelesses Blanc «Les Belles Filles»", p:"Hubert Moret-Nominé", a:null, c:"Bianco", r:"Borgogna", z:"Côte de Beaune", w:[2025,2030], note:"Il 'baby-Corton-Charlemagne': la collina dietro Corton. Micro-maison in esclusiva Ferdy.", st:"in arrivo"},
- {g:"Borgogna — Bianco", n:"Rully Blanc «les Maizières»", p:"Marthe Henry", a:2022, c:"Bianco", r:"Borgogna", z:"Côte Chalonnaise", w:[2025,2029], note:"La Chalonnaise bianca, annata 2022 equilibrata (scelta vs il 2023 largo). Con la scala: Tixier 2024 → questo 2022 → Clerget 2018.", st:"in arrivo"},
+ {g:"Borgogna — Bianco", n:"Meursault «Les Chevalières»", p:"Domaine Y. Clerget", a:2018, c:"Bianco", r:"Borgogna", z:"Côte de Beaune", w:[2024,2030], note:"IL Meursault: village maturo (8 anni) dal domaine di Thibaud Clerget (fondato 1268). Strutturato e complesso, 20% legno nuovo. Finestra aperta: si può bere già.", st:"cantina"},
+ {g:"Borgogna — Bianco", n:"Chablis «Lacryma Vinea»", p:"Thomas Tixier", a:2024, c:"Bianco", r:"Borgogna", z:"Chablis", w:[2026,2031], note:"La cuvée alta del giovane grower naturale di Courgis (nelle carte accanto a De Moor e Béru). Giovanissimo: dagli aria all'apertura.", st:"cantina"},
+ {g:"Borgogna — Bianco", n:"Pernand-Vergelesses Blanc «Les Belles Filles»", p:"Hubert Moret-Nominé", a:null, c:"Bianco", r:"Borgogna", z:"Côte de Beaune", w:[2025,2030], note:"Il 'baby-Corton-Charlemagne': la collina dietro Corton. Micro-maison in esclusiva Ferdy.", st:"cantina"},
+ {g:"Borgogna — Bianco", n:"Rully Blanc «les Maizières»", p:"Marthe Henry", a:2022, c:"Bianco", r:"Borgogna", z:"Côte Chalonnaise", w:[2025,2029], note:"La Chalonnaise bianca, annata 2022 equilibrata (scelta vs il 2023 largo). Con la scala: Tixier 2024 → questo 2022 → Clerget 2018.", st:"cantina"},
  {g:"Piemonte", n:"Barolo «Bricco delle Viole»", p:"G.D. Vajra", a:2019, c:"Rosso", r:"Piemonte", z:"Barolo", w:[2027,2040], note:"Finezza d'altura. Attendere.", st:"cantina"},
  {g:"Piemonte", n:"Barolo del Comune di La Morra", p:"Gianni Gagliardo", a:2021, c:"Rosso", r:"Piemonte", z:"Barolo", w:[2027,2036], note:"", st:"cantina"},
  {g:"Piemonte", n:"Barolo «Cannubi» ×3", p:"Damilano", a:2017, c:"Rosso", r:"Piemonte", z:"Barolo", w:[2025,2037], note:"Finestra aperta: la prima delle tre si può stappare.", st:"cantina"},
@@ -331,8 +331,8 @@ const borgogna = [
      {n:"Santenay & Maranges", note:"", lv:[["Village","gap"],["1er Cru","gap"],["Grand Cru","na"]]},
      {n:"Hautes-Côtes de Beaune", note:"Il riferimento leggero ✓", lv:[["Sub-regionale","ok","Le Grappin 2021 bevuto"]]}]},
    {col:"Bianco", vill:[
-     {n:"Pernand-Vergelesses (bianco)", note:"La collina dietro Corton", lv:[["Village","ok","Moret-Nominé «Les Belles Filles» in arrivo"],["1er Cru","gap"],["Grand Cru","na"]]},
-     {n:"Meursault", note:"Lo spirito c'è (Morey), il village manca", lv:[["Village","ok","Clerget «Les Chevalières» 2018 — in arrivo (il buco n.1, chiuso!)"],["1er Cru","gap","Perrières, Genevrières, Charmes"],["Grand Cru","na"]]},
+     {n:"Pernand-Vergelesses (bianco)", note:"La collina dietro Corton", lv:[["Village","ok","Moret-Nominé «Les Belles Filles» in cantina"],["1er Cru","gap"],["Grand Cru","na"]]},
+     {n:"Meursault", note:"Lo spirito c'è (Morey), il village manca", lv:[["Village","ok","Clerget «Les Chevalières» 2018 — in cantina (il buco n.1, chiuso!)"],["1er Cru","gap","Perrières, Genevrières, Charmes"],["Grand Cru","na"]]},
      {n:"Puligny-Montrachet", note:"PRIORITÀ BIANCO — la stratificazione che cerchi", lv:[["Village","gap"],["1er Cru","gap","Pucelles, Combettes, Folatières"],["Grand Cru","gap","Montrachet, Chevalier, Bâtard"]]},
      {n:"Chassagne-Montrachet", note:"", lv:[["Village","gap"],["1er Cru","gap","Caillerets, Morgeot"],["Grand Cru","gap","Montrachet (condiviso), Criots-Bâtard"]]},
      {n:"Saint-Aubin", note:"Il QPR dei bianchi (Hubert Lamy, PYCM)", lv:[["Village","gap"],["1er Cru","gap","En Remilly, Murgers des Dents de Chien"],["Grand Cru","na"]]},
@@ -344,7 +344,7 @@ const borgogna = [
      {n:"Givry", note:"", lv:[["Village","gap","Joblot / Lumpp quando disponibili"],["1er Cru","gap","Clos Salomon, Cellier aux Moines"],["Grand Cru","na"]]},
      {n:"Rully (rosso)", note:"Visto il Devevey «La Chaume» — non preso", lv:[["Village","gap"],["1er Cru","gap"],["Grand Cru","na"]]}]},
    {col:"Bianco", vill:[
-     {n:"Rully (bianco)", note:"", lv:[["Village","ok","Marthe Henry «les Maizières» 2022 — in arrivo"],["1er Cru","gap"],["Grand Cru","na"]]},
+     {n:"Rully (bianco)", note:"", lv:[["Village","ok","Marthe Henry «les Maizières» 2022 — in cantina"],["1er Cru","gap"],["Grand Cru","na"]]},
      {n:"Montagny", note:"Solo bianco", lv:[["Village","gap"],["1er Cru","gap"],["Grand Cru","na"]]},
      {n:"Bouzeron", note:"Il vitigno Aligoté è coperto (Pataille in arrivo); l'appellazione no", lv:[["Village","mid","de Villaine il riferimento dell'AOC"],["1er Cru","na"],["Grand Cru","na"]]}]}
  ]},
