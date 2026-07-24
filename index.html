@@ -151,7 +151,7 @@ footer{margin-top:44px;font-size:11px;color:var(--grigio);border-top:1px solid v
 <header>
   <div class="eyebrow">Diario di cantina · Rolando</div>
   <h1>La Cave — <em>Borgogna &amp; oltre</em></h1>
-  <div class="meta">Aggiornato al <b>21 luglio 2026</b> · curato con Claude · le date con ~ sono approssimative, correggimi e le sistemo</div>
+  <div class="meta">Aggiornato al <b>22 luglio 2026</b> · curato con Claude · le date con ~ sono approssimative, correggimi e le sistemo</div>
 </header>
 
 <nav role="tablist">
@@ -256,7 +256,6 @@ const bottiglie = [
  {g:"Borgogna — Bianco", n:"Meursault «Les Chevalières»", p:"Domaine Y. Clerget", a:2018, c:"Bianco", r:"Borgogna", z:"Côte de Beaune", w:[2024,2030], note:"IL Meursault: village maturo (8 anni) dal domaine di Thibaud Clerget (fondato 1268). Strutturato e complesso, 20% legno nuovo. Finestra aperta: si può bere già.", st:"cantina"},
  {g:"Borgogna — Bianco", n:"Chablis «Lacryma Vinea»", p:"Thomas Tixier", a:2024, c:"Bianco", r:"Borgogna", z:"Chablis", w:[2026,2031], note:"La cuvée alta del giovane grower naturale di Courgis (nelle carte accanto a De Moor e Béru). Giovanissimo: dagli aria all'apertura.", st:"cantina"},
  {g:"Borgogna — Bianco", n:"Pernand-Vergelesses Blanc «Les Belles Filles»", p:"Hubert Moret-Nominé", a:null, c:"Bianco", r:"Borgogna", z:"Côte de Beaune", w:[2025,2030], note:"Il 'baby-Corton-Charlemagne': la collina dietro Corton. Micro-maison in esclusiva Ferdy.", st:"cantina"},
- {g:"Borgogna — Bianco", n:"Rully Blanc «les Maizières»", p:"Marthe Henry", a:2022, c:"Bianco", r:"Borgogna", z:"Côte Chalonnaise", w:[2025,2029], note:"La Chalonnaise bianca, annata 2022 equilibrata (scelta vs il 2023 largo). Con la scala: Tixier 2024 → questo 2022 → Clerget 2018.", st:"cantina"},
  {g:"Piemonte", n:"Barolo «Bricco delle Viole»", p:"G.D. Vajra", a:2019, c:"Rosso", r:"Piemonte", z:"Barolo", w:[2027,2040], note:"Finezza d'altura. Attendere.", st:"cantina"},
  {g:"Piemonte", n:"Barolo del Comune di La Morra", p:"Gianni Gagliardo", a:2021, c:"Rosso", r:"Piemonte", z:"Barolo", w:[2027,2036], note:"", st:"cantina"},
  {g:"Piemonte", n:"Barolo «Cannubi» ×3", p:"Damilano", a:2017, c:"Rosso", r:"Piemonte", z:"Barolo", w:[2025,2037], note:"Finestra aperta: la prima delle tre si può stappare.", st:"cantina"},
@@ -278,6 +277,7 @@ const bottiglie = [
 ];
 
 const degustazioni = [
+ {area:"Borgogna — Bianco", v:"Rully Blanc «les Maizières» 2022 · Marthe Henry", d:"22 lug 2026", eti:{p:"Marthe Henry",n:"Rully les Maizières",a:2022,c:"Bianco"}, nota:"(in beva — note in arrivo)", claude:"Prima bottiglia dell'ordine Ferdy e prima Chalonnaise bianca del percorso: Chardonnay 'di mezzo' — più caldo di Chablis, più gentile della Côte de Beaune. Annata 2022 equilibrata. Servire ~11-13°C."},
  {area:"Italia — Bianchi", v:"Soave Classico «La Rocca» 2024 · Pieropan", d:"~21 lug 2026", eti:{p:"Pieropan",n:"Soave Classico La Rocca",a:2024,c:"Bianco"}, nota:"(bevuto — note non registrate)", claude:"Il cru simbolo di Pieropan: Garganega dalla collina della Rocca di Soave, con legno grande — il Soave 'ricco', tra i bianchi italiani più iconici. Se hai due impressioni, le aggiungo."},
  {area:"Italia — Bianchi", v:"«Tenuta dei Preti» · Tommasone (Ischia)", d:"~21 lug 2026", img:"preti", nota:"(bevuta — note non registrate)", claude:"Bianco vulcanico d'isola: suoli di tufo verde, tutt'altra mineralità rispetto al calcare di Borgogna. Se ti va, dimmi due impressioni a memoria e le aggiungo."},
  {area:"Borgogna — Rosso", v:"Pommard «Les Noizons» 2023 · Domaine Cauvard", d:"18 lug 2026", img:"pommard", nota:"Primo sorso: senti subito i tannini, belli forti. Aperto nel decanter: molto piacevole — si sente la struttura ma insieme freschezza e acidità, più del Fixin. Sentori: frutti rossi ma anche pesca poco matura; finale amaricante.", claude:"Il gradino della potenza — e la lezione degli assi indipendenti: struttura e freschezza NON sono opposti. Tannino (argille ferrose) + acidità viva insieme = la ricetta dei vini che invecchiano (sono i due conservanti naturali). Più acido del Fixin nonostante il villaggio più muscolare: annata e sito (Noizons, lato nord fresco) battono lo stereotipo. Il decanter ha fatto il suo lavoro: da tannino-in-faccia a piacevolezza in un'ora."},
@@ -344,7 +344,7 @@ const borgogna = [
      {n:"Givry", note:"", lv:[["Village","gap","Joblot / Lumpp quando disponibili"],["1er Cru","gap","Clos Salomon, Cellier aux Moines"],["Grand Cru","na"]]},
      {n:"Rully (rosso)", note:"Visto il Devevey «La Chaume» — non preso", lv:[["Village","gap"],["1er Cru","gap"],["Grand Cru","na"]]}]},
    {col:"Bianco", vill:[
-     {n:"Rully (bianco)", note:"", lv:[["Village","ok","Marthe Henry «les Maizières» 2022 — in cantina"],["1er Cru","gap"],["Grand Cru","na"]]},
+     {n:"Rully (bianco)", note:"", lv:[["Village","ok","Marthe Henry «les Maizières» 2022 — in beva (22 lug 2026)"],["1er Cru","gap"],["Grand Cru","na"]]},
      {n:"Montagny", note:"Solo bianco", lv:[["Village","gap"],["1er Cru","gap"],["Grand Cru","na"]]},
      {n:"Bouzeron", note:"Il vitigno Aligoté è coperto (Pataille in arrivo); l'appellazione no", lv:[["Village","mid","de Villaine il riferimento dell'AOC"],["1er Cru","na"],["Grand Cru","na"]]}]}
  ]},
